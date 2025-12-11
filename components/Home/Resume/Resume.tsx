@@ -12,7 +12,7 @@ const Resume = () => {
             <div className='w-[90%] sm:w-[70%] mx-auto grid grid-cols-1 xl:grid-cols-2 gap-10'>
                 {/* WORK PART */}
                 <div>
-                    <h1 className='txt-3xl sm:text-4xl font-bold text-white'>
+                    <h1 className='text-3xl sm:text-4xl font-bold text-white text-center sm:text-center md:text-center lg:text-center'>
                         My Work <span className='text-indigo-400'>Experince</span>
                     </h1>
                     <div className='mt-10 ' data-aos="zoom-in" data-achor-placement="top-center" >
@@ -23,7 +23,7 @@ const Resume = () => {
                 </div>
                 {/* EDUCATION PART */}
                 <div>
-                    <h1 className='txt-3xl sm:text-4xl font-bold text-white'>
+                    <h1 className='text-3xl sm:text-4xl font-bold text-white text-center sm:text-center md:text-center lg:text-center'>
                         My <span className='text-indigo-400'>Education</span>
                     </h1>
 

@@ -7,7 +7,7 @@ import ParticleHero from './ParticleBackground';
 
 const Hero = () => {
     return (
-        <div className='relative h-screen flex items-center justify-center text-white overflow-hidden flex-col' id='Hero'>
+        <div className='relative h-screen flex items-center justify-center text-white overflow-hidden flex-col top-10' id='Hero'>
             <ParticleHero />
             <div className='relative z-10 flex flex-col items-center'>
                 <Image
