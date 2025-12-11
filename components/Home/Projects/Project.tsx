@@ -4,15 +4,15 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react'
 
 const booldImage = [
-    "/Images/bood-login.png",
-    "/Images/blood-admin.png",
-    "/Images/blood-donar.png",
+    "/images/bood-login.png",
+    "/images/blood-admin.png",
+    "/images/blood-donar.png",
 ];
 
 const authImage = [
-    "/Images/auth-login.png",
-    "/Images/auth-sign.png",
-    "/Images/auth-forget.png",
+    "/images/auth-login.png",
+    "/images/auth-sign.png",
+    "/images/auth-forget.png",
 ];
 const Project = () => {
     const [index, setIndex] = useState(0);
@@ -36,7 +36,7 @@ const Project = () => {
                     {/* <Link href=""> */}
                     {/* className='bg-gray-800 p-6 rounded-lg shadow-lg' */}
                     {/* <Image */}
-                        {/* // src="/Images/p1.jpg"
+                        {/* // src="/images/p1.jpg"
                         // alt="img"
                         // width={800}
                         // height={650}
@@ -52,7 +52,7 @@ const Project = () => {
                 <div data-aos="fade-up" data-achor-placement="top-center" data-aos-delay="0" >
                     <Link href="https://chatbot-nine-nu-87.vercel.app/" target='_blank'>
                     <Image
-                        src="/Images/chatbot.png"
+                        src="/images/chatbot.png"
                         alt="img"
                         width={800}
                         height={650}
