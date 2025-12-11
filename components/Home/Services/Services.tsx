@@ -13,7 +13,7 @@ const Services = () => {
             gap-10 mt-20 items-center' >
                 <div data-aos="fade-right" data-achor-placement="top-center">
                     <ServiceCard
-                        icon="/Images/s1.png"
+                        icon="/images/s1.png"
                         name="UI and UX"
                         description="Designing interface that are intuitive, and enjoyable for users."
                     />
@@ -21,21 +21,21 @@ const Services = () => {
                 <div 
                 data-aos="fade-right" data-achor-placement="top-center" data-aos-delay="100">
                     <ServiceCard
-                        icon="/Images/s2.png"
+                        icon="/images/s2.png"
                         name="Web and Mobile App "
                         description="Designing interface that are intuitive, and enjoyable for users."
                     />
                 </div>
                 <div data-aos="fade-right" data-achor-placement="top-center" data-aos-delay="200">
                     <ServiceCard
-                        icon="/Images/s3.png"
+                        icon="/images/s3.png"
                         name="Design and Creative"
                         description="Designing interface that are intuitive, and enjoyable for users."
                     />
                 </div>
                 <div data-aos="fade-right" data-achor-placement="top-center" data-aos-delay="300">
                     <ServiceCard
-                        icon="/Images/s4.png"
+                        icon="/images/s4.png"
                         name="Development"
                         description="Designing interface that are intuitive, and enjoyable for users."
                     />
