@@ -9,6 +9,7 @@ import Skills from './Skills/Skills'
 import Contact from './Contact/Contact'
 import AOS from "aos";
 import "aos/dist/aos.css";
+// import Cretificate from './Certificates/Cretificate';
 
 const Home = () => {
 
@@ -29,6 +30,7 @@ const Home = () => {
       <Resume />
       <Project />
       <Skills />
+      {/* <Cretificate /> */}
       {/* <ClientReview /> */}
       <Contact />
       

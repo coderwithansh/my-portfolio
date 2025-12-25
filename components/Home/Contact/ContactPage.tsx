@@ -100,7 +100,8 @@ const ContactPage = () => {
         {/* RIGHT */}
         <div 
         data-aos="flip-left" data-achor-placement="top-center" data-aos-delay="300"
-        className="bg-white/5 backdrop-blur-2xl border border-white/10 rounded-3xl p-8 shadow-[0_0_40px_rgba(0,0,0,0.5)]">
+        // bg-white/10 backdrop-blur-2xl border border-white/20 rounded-3xl p-8 shadow-[0_0_40px_rgba(0,0,0,0.5)] transition-all duration-300 hover:border-white/30
+        className="bg-white/5 backdrop-blur-2xl border border-white/20 rounded-3xl p-8 shadow-[0_0_40px_rgba(0,0,0,0.5)] transition-all duration-300 hover:border-white/30">
           <form className="space-y-6" onSubmit={handleSubmit}>
             <input type="text" placeholder="Name" value={form.name} className="w-full p-4 bg-[#1A1F2E] rounded-xl border border-white/10" onChange={e => setForm({ ...form, name: e.target.value })}/>
             {errors.name && <p className="text-red-400 text-sm">{errors.name}</p>}
