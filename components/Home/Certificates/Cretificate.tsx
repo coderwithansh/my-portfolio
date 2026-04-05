@@ -26,7 +26,7 @@ const Cretificate = () => {
                         key={item.id}
                         data-aos="fade-up"
                         data-aos-anchor-placement="top-center"
-                        className="group relative overflow-hidden rounded-2xl bg-gradient-to-br from-white/10 to-white/5 p-[2px] hover:from-indigo-500/30 hover:to-indigo-700/30 transition-all duration-300"
+                        className="group relative overflow-hidden rounded-2xl bg-linear-to-br from-white/10 to-white/5 p-0.5 hover:from-indigo-500/30 hover:to-indigo-700/30 transition-all duration-300"
                     >
                         <Link
                             href="https://your-certificate-link.com"
