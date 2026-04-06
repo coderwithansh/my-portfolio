@@ -27,7 +27,7 @@ const Nav = ({ openNav }: Props) => {
     <div
       className={`transition-all ${
         navBg ? "bg-[#0f142ed9] shadow-md" : "fixed"
-      } duration-200 h-[12vh] z-[10000] fixed w-full`}
+      } duration-200 h-[12vh] z-10000 fixed w-full`}
     >
       <div className="flex items-center h-full justify-between w-[90%] mx-auto">
         {/* {logo} */}
@@ -45,7 +45,7 @@ const Nav = ({ openNav }: Props) => {
             return (
               <Link
                 key={link.id}
-                href="#"
+                href={link.path}
                 onClick={() => {
                   const section = document.getElementById(link.url);
                   section?.scrollIntoView({ behavior: "smooth" });

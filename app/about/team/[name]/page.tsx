@@ -11,8 +11,8 @@ export async function generateMetadata(
   const memberName = decodeURIComponent(params.name);
 
   return {
-    title: `${memberName} | Team Member | Ansh Dewangan Portfolio`,
-    description: `Explore ${memberName}'s role, skills, projects, and contribution in Ansh Dewangan's portfolio team section.`,
+    title: `${memberName} | Team Member | Ansh Kumar Dewangan Portfolio`,
+    description: `Explore ${memberName}'s role, skills, projects, and contribution in Ansh Kumar Dewangan's portfolio team section.`,
     keywords: [
       memberName,
       "Team Member",
