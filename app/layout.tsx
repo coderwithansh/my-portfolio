@@ -13,6 +13,9 @@ const font = Inter({
 export const metadata: Metadata = {
   title: "Ansh Portfolio | next.js 16",
   description: "Portfolio built with next.js 16",
+   verification: {
+    google: "abc123xyz",
+  },
 };
 
 export default function RootLayout({
