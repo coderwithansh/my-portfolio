@@ -12,7 +12,7 @@ const font = Inter({
 
 export const metadata: Metadata = {
   title: "Ansh Portfolio | next.js 16",
-  description: "Portfolio built with next.js 16",
+  description: "Full Stack Developer Portfolio",
    verification: {
     google: "kN1W_AjEPptYWOfJFkqnmEQN98fqG7_8LcXznelX0GA",
   },
