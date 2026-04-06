@@ -14,10 +14,10 @@ export const metadata: Metadata = {
   title: "Ansh Portfolio | next.js 16",
   description: "Portfolio built with next.js 16",
    verification: {
-    google: "abc123xyz",
+    google: "kN1W_AjEPptYWOfJFkqnmEQN98fqG7_8LcXznelX0GA",
   },
 };
-
+{/* <meta name="google-site-verification" content="kN1W_AjEPptYWOfJFkqnmEQN98fqG7_8LcXznelX0GA" /> */}
 export default function RootLayout({
   children,
 }: Readonly<{
