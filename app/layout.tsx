@@ -11,9 +11,70 @@ const font = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Ansh Portfolio | next.js 16",
+  title: {
+    default: "Ansh Portfolio | Next.js 16",
+    template: "%s | Ansh Portfolio",
+  },
+
   description: "Full Stack Developer Portfolio",
-   verification: {
+
+  keywords: [
+    "Ansh Dewangan",
+    "Full Stack Developer",
+    "MERN Stack Developer",
+    "Next.js Developer",
+    "React Developer",
+    "Portfolio",
+    "CG Web-developer",
+    "webdev-ansh"
+  ],
+
+  authors: [
+    {
+      name: "Ansh Dewangan",
+    },
+  ],
+
+  creator: "Ansh Dewangan",
+
+  metadataBase: new URL("https://your-domain.com"),
+
+  alternates: {
+    canonical: "/",
+  },
+
+  openGraph: {
+    title: "Ansh Portfolio | Next.js 16",
+    description: "Full Stack Developer Portfolio",
+    url: "https://your-domain.com",
+    siteName: "Ansh Portfolio",
+
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Ansh Portfolio",
+      },
+    ],
+
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Ansh Portfolio | Next.js 16",
+    description: "Full Stack Developer Portfolio",
+    images: ["/og-image.png"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+
+  verification: {
     google: "kN1W_AjEPptYWOfJFkqnmEQN98fqG7_8LcXznelX0GA",
   },
 };
