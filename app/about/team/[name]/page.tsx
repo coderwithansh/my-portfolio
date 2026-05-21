@@ -22,6 +22,10 @@ export async function generateMetadata(
       "full-stack developer",
       "AKD Portfolio",
       "Ansh Kumar Dewangan",
+      "CG Web Developer",
+      "Durg",
+      "software developer ansh",
+      "software developer",
     ],
     alternates: {
       canonical: `https://ansh-portfolio-75.vercel.app/team/${params.name}`,
