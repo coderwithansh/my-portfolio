@@ -8,7 +8,6 @@ import Skills from './Skills/Skills'
 // import ClientReview from './ClientReview/ClientReview'
 import Contact from './Contact/Contact'
 import AOS from "aos";
-import "aos/dist/aos.css";
 // import Cretificate from './Certificates/Cretificate';
 
 const Home = () => {

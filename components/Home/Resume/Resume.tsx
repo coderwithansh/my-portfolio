@@ -31,7 +31,7 @@ const Resume = () => {
                         data-aos="zoom-out" data-achor-placement="top-center" data-aos-delay="300" >
                         <ResumeCart Icon={BiBadge}
                             role={
-                                <>Master of Computer Application(MCA) <sup>Pursuing</sup>
+                                <>Master of Computer Application(MCA)
                                 </>}
                             date="Sept 2024 - Jul 2026"
                             school="Chhattisgarh Swami Vivekanand Technical University"

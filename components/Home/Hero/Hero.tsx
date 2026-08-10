@@ -7,14 +7,14 @@ import ParticleHero from './ParticleBackground';
 
 const Hero = () => {
     return (
-        <div className='relative h-screen flex items-center justify-center text-white overflow-hidden flex-col top-10' id='Hero'>
+        <div className='relative h-screen flex items-center justify-center text-black dark:text-white overflow-hidden flex-col top-10' id='Hero'>
             <ParticleHero />
             <div className='relative z-10 flex flex-col items-center'>
                 <Image
                     src="/images/myPhoto.png"
                     alt="heroImage"
                     width={150} height={150}
-                    className='rounded-full border-8 border-[#0c0c48aa]'
+                    className='rounded-full border-8 border-gray-300 dark:border-[#0c0c48aa]'
                     data-aos="fade-up"
                 />
                 <h1 data-aos="fade-up" data-aos-delay="200"
@@ -41,8 +41,8 @@ const Hero = () => {
                 </h2>
                 <button
                     data-aos="fade-up" data-aos-delay="600"
-                    className='mt-6 px-10 py-4 bg-blue-800 hover:bg-blue-900 transition-all duration-300
-                    cursor-pointer rounded-full text-lg font-medium'
+                    className='mt-6 px-10 py-4 bg-blue-600 hover:bg-blue-700 dark:bg-blue-800 dark:hover:bg-blue-900 transition-all 
+                    duration-300 cursor-pointer rounded-full text-lg font-medium text-white'
                     onClick={() => {
                         const section = document.getElementById("Project");
                         section?.scrollIntoView({ behavior: "smooth" });
