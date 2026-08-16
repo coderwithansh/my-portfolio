@@ -19,9 +19,9 @@ const doctorconsultationImage = [
     "/images/doctorConsultationLogin.png",
     "/images/doctorConsultationAdmin.png",
 ];
-const ecommerceImage =[
-    "/images/auth-login.png",
-    "/images/auth-sign.png",
+const ecommerceImage = [
+    "/images/",
+    "/images/",
 ];
 
 const Project = () => {
@@ -132,7 +132,26 @@ const Project = () => {
                     </Link>
                 </div>
                 {/* five project add */}
-                <div data-aos="fade-up" data-achor-placement="top-center" data-aos-delay="300" >
+                <div
+                    data-aos="fade-up"
+                    data-achor-placement="top-center"
+                    data-aos-delay="300"
+                >
+                    <div className="relative h-[300px] w-full overflow-hidden rounded-lg bg-gray-800/60 border border-white/10 flex items-center justify-center">
+                        <h2 className="text-3xl sm:text-4xl font-bold text-white">
+                            Coming Soon
+                        </h2>
+                    </div>
+
+                    <h1 className="mt-4 text-xl sm:text-2xl font-semibold text-white">
+                        Ecommerce Platform
+                    </h1>
+
+                    <h1 className="pt-2 font-medium text-white/80">
+                        Apps, UI/UX, Web App
+                    </h1>
+                </div>
+                {/* <div data-aos="fade-up" data-achor-placement="top-center" data-aos-delay="300" >
                     <Link href="https://doctor-consultation-app-sigma.vercel.app/" target='_blank'>
                         <div className="relative h-[300px] w-full overflow-hidden rounded-lg">
                             <Image
@@ -141,13 +160,16 @@ const Project = () => {
                                 fill
                                 className='rounded-lg' />
                         </div>
+                        <h2 className="text-3xl sm:text-4xl font-bold text-white">
+                            Coming Soon
+                        </h2>
                         <h1 className='mt-4 text-xl sm:text-2xl font-semibold text-white'>
                             Ecommerce Platform</h1>
                         <h1 className='pt-2 font-medium text-white/80'>
                             Apps , UI/UX, Web App
                         </h1>
                     </Link>
-                </div>
+                </div> */}
             </div>
         </div>
     )
