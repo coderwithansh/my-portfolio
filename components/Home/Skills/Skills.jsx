@@ -1,6 +1,6 @@
 "use client";
 import React from 'react'
-import { BiLogoJava } from 'react-icons/bi';
+import { BiLogoJava, BiLogoPostgresql } from 'react-icons/bi';
 import { SiGithub, SiJavascript, SiMysql, SiNextdotjs, SiNodedotjs, SiPython, SiReact, SiTailwindcss, SiTypescript } from 'react-icons/si'
 import Tilt from 'react-parallax-tilt'
 
@@ -29,6 +29,11 @@ const Slikks = [
         name: 'SQl',
         icon: <SiMysql />,
         parcentage: 80,
+    },
+    {
+        name: 'Postgres Sql',
+        icon: <BiLogoPostgresql />,
+        parcentage: 90,
     },
     {
         name: 'Tailwind CSS',

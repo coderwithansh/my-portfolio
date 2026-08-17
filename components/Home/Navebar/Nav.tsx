@@ -5,6 +5,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { BiDownload } from "react-icons/bi";
 import { FaCode } from "react-icons/fa";
+import { GrUpdate } from "react-icons/gr";
 import { HiBars3BottomRight } from "react-icons/hi2";
 
 type Props = {
@@ -125,17 +126,34 @@ const Nav = ({ openNav }: Props) => {
         {/* buttons */}
         <div className="flex items-center space-x-4">
 
-          {/* {cv buttom} */}
+          {/* Blog Button */}
+          <Link
+            href="/blog"
+            className="group relative inline-flex overflow-hidden rounded-[7px] p-[1px]"
+          >
+            {/* Animated border */}
+            <span className="absolute inset-[-150%] animate-[spin_4s_linear_infinite] bg-[conic-gradient(from_0deg,transparent_0deg,#3b82f6_90deg,#6366f1_180deg,#8b5cf6_240deg,transparent_320deg)]" />
+
+            {/* Button content */}
+            <span
+              className="relative flex items-center justify-center gap-2 rounded-[6px] bg-blue-700 px-8 py-3.5 text-sm font-medium text-white transition-all duration-300 group-hover:bg-blue-800 group-hover:shadow-[0_0_20px_rgba(59,130,246,0.35)]"
+            >
+              <GrUpdate className="h-5 w-5 transition-transform duration-300 group-hover:translate-y-0.5" />
+
+              {/* Desktop only */}
+              <span className="hidden sm:inline">
+                Blog
+              </span>
+            </span>
+          </Link>
           {/* Download CV */}
           <a download
             href="/CV/ansh-cv.pdf"
             className="group relative inline-flex items-center justify-center rounded-lg p-[1.5px] overflow-hidden"
           >
-
             {/* Animated Ring Border */}
             <span className=" absolute inset-[-150%] animate-[spin_4s_linear_infinite] bg-[conic-gradient(from_0deg,transparent_0deg,#3b82f6_90deg,#6366f1_180deg,#8b5cf6_240deg,transparent_320deg)]" />
-
-            {/* Button Content */}
+            {/* download button */}
             <span className="relative flex items-center justify-center gap-2 rounded-[7px] bg-blue-700 px-8 py-3.5 text-sm font-medium
                 text-white transition-all duration-300 group-hover:bg-blue-800 group-hover:shadow-[0_0_20px_rgba(59,130,246,0.35)]"
             >
