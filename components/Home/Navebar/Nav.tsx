@@ -1,6 +1,7 @@
 "use client";
 import ThemeToggle from "@/components/Helper/ThemeToggle";
 import { NavLinks } from "@/constant/constant";
+import { prisma } from "@/lib/prisma";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { BiDownload } from "react-icons/bi";
@@ -15,6 +16,7 @@ type Props = {
 const Nav = ({ openNav }: Props) => {
   const [navBg, setNavBg] = useState(false);
   const [activeComponent, setActiveComponent] = useState<number | null>(null);
+  const [hasPublishedBlog, setHasPublishedBlog] = useState(false);
 
   useEffect(() => {
     const handler = () => {
@@ -24,6 +26,29 @@ const Nav = ({ openNav }: Props) => {
     window.addEventListener("scroll", handler);
 
     return () => window.removeEventListener("scroll", handler);
+  }, []);
+
+  // Check published blogs
+
+  useEffect(() => {
+
+    const checkPublishedBlog = async () => {
+      try {
+        const res = await fetch("/api/blog");
+        if (!res.ok) {
+          setHasPublishedBlog(false);
+          return;
+        }
+        const data = await res.json();
+        setHasPublishedBlog(
+          data.success && data.blogs?.length > 0
+        );
+      } catch (error) {
+        console.error("CHECK BLOG ERROR:", error);
+        setHasPublishedBlog(false);
+      }
+    };
+    checkPublishedBlog();
   }, []);
   return (
     <div
@@ -127,25 +152,27 @@ const Nav = ({ openNav }: Props) => {
         <div className="flex items-center space-x-4">
 
           {/* Blog Button */}
-          <Link
-            href="/blog"
-            className="group relative inline-flex overflow-hidden rounded-[7px] p-[1px]"
-          >
-            {/* Animated border */}
-            <span className="absolute inset-[-150%] animate-[spin_4s_linear_infinite] bg-[conic-gradient(from_0deg,transparent_0deg,#3b82f6_90deg,#6366f1_180deg,#8b5cf6_240deg,transparent_320deg)]" />
-
-            {/* Button content */}
-            <span
-              className="relative flex items-center justify-center gap-2 rounded-[6px] bg-blue-700 px-8 py-3.5 text-sm font-medium text-white transition-all duration-300 group-hover:bg-blue-800 group-hover:shadow-[0_0_20px_rgba(59,130,246,0.35)]"
+          {hasPublishedBlog && (
+            <Link
+              href="/blog"
+              className="group relative inline-flex overflow-hidden rounded-[7px] p-[1px]"
             >
-              <GrUpdate className="h-5 w-5 transition-transform duration-300 group-hover:translate-y-0.5" />
+              {/* Animated border */}
+              <span className="absolute inset-[-150%] animate-[spin_4s_linear_infinite] bg-[conic-gradient(from_0deg,transparent_0deg,#3b82f6_90deg,#6366f1_180deg,#8b5cf6_240deg,transparent_320deg)]" />
 
-              {/* Desktop only */}
-              <span className="hidden sm:inline">
-                Blog
+              {/* Button content */}
+              <span
+                className="relative flex items-center justify-center gap-2 rounded-[6px] bg-blue-700 px-8 py-3.5 text-sm font-medium text-white transition-all duration-300 group-hover:bg-blue-800 group-hover:shadow-[0_0_20px_rgba(59,130,246,0.35)]"
+              >
+                <GrUpdate className="h-5 w-5 transition-transform duration-300 group-hover:translate-y-0.5" />
+
+                {/* Desktop only */}
+                <span className="hidden sm:inline">
+                  Blog
+                </span>
               </span>
-            </span>
-          </Link>
+            </Link>
+          )}
           {/* Download CV */}
           <a download
             href="/CV/ansh-cv.pdf"
